@@ -11,30 +11,29 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            /* Lighter industrial background */
-            background-color: #e2e8f0; /* light gray */
-            color: #374151; /* gray-700 text */
+            /* Light gray/off-white background */
+            background-color: #f8fafc; 
+            color: #334155; /* slate-700 text */
         }
-        /* Custom styling for sharp lines/borders and light cards */
         .card {
             background-color: #ffffff; /* white */
             border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            border: 1px solid #d1d5db; /* gray-300 */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0; /* slate-200 */
             transition: transform 0.2s;
         }
         .card:hover {
             transform: translateY(-2px);
         }
-        .accent-text {
-            color: #1d4ed8; /* blue-700 (Steel blue accent) */
+        .accent-color {
+            color: #0ea5e9; /* Sky Blue - Vibrant and professional */
         }
         .btn-accent {
-            background-color: #3b82f6;
+            background-color: #0ea5e9; /* Sky Blue */
             transition: background-color 0.3s;
         }
         .btn-accent:hover {
-            background-color: #2563eb;
+            background-color: #0284c7; /* Darker Sky Blue */
         }
     </style>
 </head>
@@ -45,13 +44,13 @@
             <!-- Header Section -->
             <header class="p-6 card mb-8 flex flex-col md:flex-row items-center">
                 <!-- Photo/Image Area -->
-                <div class="w-32 h-32 bg-gray-200 rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6 overflow-hidden border-2 border-blue-500">
+                <div class="w-32 h-32 bg-gray-200 rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6 overflow-hidden border-2 border-sky-500">
                     <!-- Image tag using the provided filename -->
                     <img src="IMG_3925.jpg" alt="Aaron Eltahan Photo" class="object-cover w-full h-full">
                 </div>
                 <div>
                     <h1 class="text-4xl font-black text-gray-900">Aaron Eltahan</h1>
-                    <p class="text-xl font-semibold accent-text">Class of 2028</p>
+                    <p class="text-xl font-semibold accent-color">Class of 2028</p>
                     <p class="text-gray-600 mt-1">Attacking Midfielder • Winger</p>
                     <a href="#" class="mt-3 inline-block btn-accent text-white font-bold py-2 px-4 rounded shadow-lg">
                         Watch Highlight Video
@@ -135,9 +134,9 @@
                     <section class="p-6 card">
                         <h2 class="text-xl font-bold mb-4 text-gray-900">Contacts</h2>
                         <div class="space-y-3 text-sm text-gray-600">
-                            <p><strong class="text-gray-900">Athlete:</strong> 512-608-3914 | <a href="mailto:anubis74@hotmail.com" class="accent-text hover:underline">anubis74@hotmail.com</a></p>
-                            <p><strong class="text-gray-900">Father:</strong> 512-608-3914 | <a href="mailto:aeltahan2019@outlook.com" class="accent-text hover:underline">aeltahan2019@outlook.com</a></p>
-                            <p><strong class="text-gray-900">Mother:</strong> 512-351-1586 | <a href="mailto:anubis74@hotmail.com" class="accent-text hover:underline">anubis74@hotmail.com</a></p>
+                            <p><strong class="text-gray-900">Athlete:</strong> 512-608-3914 | <a href="mailto:anubis74@hotmail.com" class="accent-color hover:underline">anubis74@hotmail.com</a></p>
+                            <p><strong class="text-gray-900">Father:</strong> 512-608-3914 | <a href="mailto:aeltahan2019@outlook.com" class="accent-color hover:underline">aeltahan2019@outlook.com</a></p>
+                            <p><strong class="text-gray-900">Mother:</strong> 512-351-1586 | <a href="mailto:anubis74@hotmail.com" class="accent-color hover:underline">anubis74@hotmail.com</a></p>
                             <p><strong class="text-gray-900">Address:</strong> 13521 Bolivia Dr, Austin, TX 78729</p>
                         </div>
                     </section>
