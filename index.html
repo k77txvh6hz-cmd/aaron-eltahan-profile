@@ -11,13 +11,30 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f4f7f9;
+            /* Lighter industrial background */
+            background-color: #e2e8f0; /* light gray */
+            color: #374151; /* gray-700 text */
         }
-        /* Custom styling for sharp lines/borders */
+        /* Custom styling for sharp lines/borders and light cards */
         .card {
+            background-color: #ffffff; /* white */
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid #d1d5db; /* gray-300 */
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+        }
+        .accent-text {
+            color: #1d4ed8; /* blue-700 (Steel blue accent) */
+        }
+        .btn-accent {
+            background-color: #3b82f6;
+            transition: background-color 0.3s;
+        }
+        .btn-accent:hover {
+            background-color: #2563eb;
         }
     </style>
 </head>
@@ -26,16 +43,17 @@
         <div class="max-w-4xl mx-auto">
             
             <!-- Header Section -->
-            <header class="bg-white p-6 card mb-8 flex flex-col md:flex-row items-center">
-                <!-- Photo Placeholder -->
-                <div class="w-32 h-32 bg-gray-200 rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6">
-                    <span class="text-gray-500">Aaron Photo</span>
+            <header class="p-6 card mb-8 flex flex-col md:flex-row items-center">
+                <!-- Photo/Image Area -->
+                <div class="w-32 h-32 bg-gray-200 rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6 overflow-hidden border-2 border-blue-500">
+                    <!-- Image tag using the provided filename -->
+                    <img src="IMG_3925.jpg" alt="Aaron Eltahan Photo" class="object-cover w-full h-full">
                 </div>
                 <div>
-                    <h1 class="text-4xl font-black text-gray-800">Aaron Eltahan</h1>
-                    <p class="text-xl font-semibold text-gray-600">Class of 2028</p>
-                    <p class="text-gray-500 mt-1">Attacking Midfielder • Winger</p>
-                    <a href="#" class="mt-3 inline-block bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+                    <h1 class="text-4xl font-black text-gray-900">Aaron Eltahan</h1>
+                    <p class="text-xl font-semibold accent-text">Class of 2028</p>
+                    <p class="text-gray-600 mt-1">Attacking Midfielder • Winger</p>
+                    <a href="#" class="mt-3 inline-block btn-accent text-white font-bold py-2 px-4 rounded shadow-lg">
                         Watch Highlight Video
                     </a>
                 </div>
@@ -47,37 +65,37 @@
                 <div class="lg:col-span-2 space-y-8">
                     
                     <!-- About Section -->
-                    <section class="bg-white p-6 card">
-                        <h2 class="text-2xl font-bold mb-4 text-gray-800">About Aaron</h2>
+                    <section class="p-6 card">
+                        <h2 class="text-2xl font-bold mb-4 text-gray-900">About Aaron</h2>
                         <div class="space-y-4 text-gray-600">
                             <p>I’m Aaron Eltahan, a hardworking, disciplined, and coachable player who focuses on steady development and contributing to the team in meaningful ways. I currently play for FC Westlake on the 2010 STX CL team, primarily as an attacking midfielder and winger. Before joining Westlake, I spent six years at Lonestar (2019–2024), playing mainly as a winger and striker while competing in league play and tournaments.</p>
                             <p>I have trained continuously for years, beginning with Avila Soccer and now with 1A Soccer Sports Club for ongoing individual technical development. Strength and conditioning sessions several times weekly support my athletic performance. Coaches describe me as extremely coachable with strong movement, vision, positioning, and reliability in possession.</p>
-                            <p>I maintain a **4.0 GPA** at Early College High School and take ACC dual-credit courses. I also work as a certified lifeguard.</p>
+                            <p>I maintain a <strong class="text-gray-900">4.0 GPA</strong> at Early College High School and take ACC dual-credit courses. I also work as a certified lifeguard.</p>
                             <p>My goal is to compete at the college level while pursuing kinesiology, sports medicine, or another health-science major.</p>
                         </div>
                     </section>
 
                     <!-- Athletic Profile & Stats Section -->
-                    <section class="bg-white p-6 card">
-                        <h2 class="text-2xl font-bold mb-4 text-gray-800">Athletic Profile</h2>
+                    <section class="p-6 card">
+                        <h2 class="text-2xl font-bold mb-4 text-gray-900">Athletic Profile</h2>
                         <div class="grid grid-cols-2 gap-4 text-gray-600">
                             <div>
-                                <p><strong class="text-gray-800">S&C:</strong> Trains 3–4 times per week</p>
-                                <p><strong class="text-gray-800">Technical Dev:</strong> Avila Soccer (2022), 1A Soccer SC (2022–present)</p>
-                                <p><strong class="text-gray-800">Playing Style:</strong> Creative, technical AM with vision and quick distribution</p>
+                                <p><strong class="text-gray-900">S&C:</strong> Trains 3–4 times per week</p>
+                                <p><strong class="text-gray-900">Technical Dev:</strong> Avila Soccer (2022), 1A Soccer SC (2022–present)</p>
+                                <p><strong class="text-gray-900">Playing Style:</strong> Creative, technical AM with vision and quick distribution</p>
                             </div>
                             <div>
-                                <h3 class="text-lg font-semibold mb-2 text-gray-800">2025 STX CL Stats</h3>
-                                <p><strong class="text-gray-800">Games Played:</strong> 21</p>
-                                <p><strong class="text-gray-800">Games Started:</strong> 20</p>
-                                <p><strong class="text-gray-800">Avg Play Time:</strong> 40 mins (fair play rule)</p>
+                                <h3 class="text-lg font-semibold mb-2 text-gray-900">2025 STX CL Stats</h3>
+                                <p><strong class="text-gray-900">Games Played:</strong> 21</p>
+                                <p><strong class="text-gray-900">Games Started:</strong> 20</p>
+                                <p><strong class="text-gray-900">Avg Play Time:</strong> 40 mins (fair play rule)</p>
                             </div>
                         </div>
                     </section>
 
                     <!-- Teams Section -->
-                    <section class="bg-white p-6 card">
-                        <h2 class="text-2xl font-bold mb-4 text-gray-800">Teams</h2>
+                    <section class="p-6 card">
+                        <h2 class="text-2xl font-bold mb-4 text-gray-900">Teams</h2>
                         <ul class="list-disc list-inside text-gray-600">
                             <li>High School: Early College High School</li>
                             <li>Club: FC Westlake (2024–present)</li>
@@ -90,47 +108,47 @@
                 <div class="space-y-8">
                     
                     <!-- Quick Info / IDs -->
-                    <section class="bg-white p-6 card">
-                        <h2 class="text-xl font-bold mb-4 text-gray-800">Details</h2>
-                        <p class="text-sm text-gray-600 mb-2"><strong class="text-gray-800">Birthdate:</strong> 03/19/2010</p>
-                        <p class="text-sm text-gray-600 mb-2"><strong class="text-gray-800">Nationality:</strong> USA</p>
-                        <p class="text-sm text-gray-600 mb-2"><strong class="text-gray-800">Height/Weight:</strong> 6'0" • 140 lbs</p>
-                        <p class="text-sm text-gray-600 mb-2"><strong class="text-gray-800">Location:</strong> Austin, Texas</p>
-                        <p class="text-sm text-gray-600 mb-2"><strong class="text-gray-800">School:</strong> ECHS Round Rock</p>
+                    <section class="p-6 card">
+                        <h2 class="text-xl font-bold mb-4 text-gray-900">Details</h2>
+                        <p class="text-sm mb-2 text-gray-600"><strong class="text-gray-900">Birthdate:</strong> 03/19/2010</p>
+                        <p class="text-sm mb-2 text-gray-600"><strong class="text-gray-900">Nationality:</strong> USA</p>
+                        <p class="text-sm mb-2 text-gray-600"><strong class="text-gray-900">Height/Weight:</strong> 6'0" • 140 lbs</p>
+                        <p class="text-sm mb-2 text-gray-600"><strong class="text-gray-900">Location:</strong> Austin, Texas</p>
+                        <p class="text-sm mb-2 text-gray-600"><strong class="text-gray-900">School:</strong> ECHS Round Rock</p>
                         
-                        <h3 class="text-md font-semibold mt-4 mb-2 text-gray-800">IDs</h3>
+                        <h3 class="text-md font-semibold mt-4 mb-2 text-gray-900">IDs</h3>
                         <p class="text-xs text-gray-600">NCAA: 2511775039</p>
                         <p class="text-xs text-gray-600">NAIA: 1025364</p>
                         <p class="text-xs text-gray-600">NCSA: VERIFIED</p>
                     </section>
 
                     <!-- Academic Scores Section -->
-                    <section class="bg-white p-6 card">
-                        <h2 class="text-xl font-bold mb-4 text-gray-800">Academics</h2>
-                        <p class="text-sm text-gray-600 mb-2"><strong class="text-gray-800">Cumulative GPA:</strong> 4.0</p>
-                        <p class="text-sm text-gray-600 mb-2"><strong class="text-gray-800">Weighted GPA:</strong> 5.64</p>
-                        <p class="text-sm text-gray-600 mb-2"><strong class="text-gray-800">Class Rank:</strong> 18 / 108</p>
-                        <p class="text-sm text-gray-600 mb-2"><strong class="text-gray-800">Interests:</strong> Sports Med, Kinesiology, etc.</p>
+                    <section class="p-6 card">
+                        <h2 class="text-xl font-bold mb-4 text-gray-900">Academics</h2>
+                        <p class="text-sm mb-2 text-gray-600"><strong class="text-gray-900">Cumulative GPA:</strong> 4.0</p>
+                        <p class="text-sm mb-2 text-gray-600"><strong class="text-gray-900">Weighted GPA:</strong> 5.64</p>
+                        <p class="text-sm mb-2 text-gray-600"><strong class="text-gray-900">Class Rank:</strong> 18 / 108</p>
+                        <p class="text-sm mb-2 text-gray-600"><strong class="text-gray-900">Interests:</strong> Sports Med, Kinesiology, etc.</p>
                     </section>
 
                     <!-- Contacts Section -->
-                    <section class="bg-white p-6 card">
-                        <h2 class="text-xl font-bold mb-4 text-gray-800">Contacts</h2>
+                    <section class="p-6 card">
+                        <h2 class="text-xl font-bold mb-4 text-gray-900">Contacts</h2>
                         <div class="space-y-3 text-sm text-gray-600">
-                            <p><strong class="text-gray-800">Athlete:</strong> 512-608-3914 | anubis74@hotmail.com</p>
-                            <p><strong class="text-gray-800">Father:</strong> 512-608-3914 | aeltahan2019@outlook.com</p>
-                            <p><strong class="text-gray-800">Mother:</strong> 512-351-1586 | anubis74@hotmail.com</p>
-                            <p><strong class="text-gray-800">Address:</strong> 13521 Bolivia Dr, Austin, TX 78729</p>
+                            <p><strong class="text-gray-900">Athlete:</strong> 512-608-3914 | <a href="mailto:anubis74@hotmail.com" class="accent-text hover:underline">anubis74@hotmail.com</a></p>
+                            <p><strong class="text-gray-900">Father:</strong> 512-608-3914 | <a href="mailto:aeltahan2019@outlook.com" class="accent-text hover:underline">aeltahan2019@outlook.com</a></p>
+                            <p><strong class="text-gray-900">Mother:</strong> 512-351-1586 | <a href="mailto:anubis74@hotmail.com" class="accent-text hover:underline">anubis74@hotmail.com</a></p>
+                            <p><strong class="text-gray-900">Address:</strong> 13521 Bolivia Dr, Austin, TX 78729</p>
                         </div>
                     </section>
 
                     <!-- Coach References Section -->
-                    <section class="bg-white p-6 card">
-                        <h2 class="text-xl font-bold mb-4 text-gray-800">Coach References</h2>
+                    <section class="p-6 card">
+                        <h2 class="text-xl font-bold mb-4 text-gray-900">Coach References</h2>
                         <div class="space-y-3 text-sm text-gray-600">
-                            <p><strong class="text-gray-800">Club Coach:</strong> Darrell Best | 512-925-4456</p>
-                            <p><strong class="text-gray-800">Club Director:</strong> Wayne Bartlett | 210-718-7400</p>
-                            <p><strong class="text-gray-800">Private Coach:</strong> Chris Brown | 737-300-1226</p>
+                            <p><strong class="text-gray-900">Club Coach:</strong> Darrell Best | 512-925-4456</p>
+                            <p><strong class="text-gray-900">Club Director:</strong> Wayne Bartlett | 210-718-7400</p>
+                            <p><strong class="text-gray-900">Private Coach:</strong> Chris Brown | 737-300-1226</p>
                         </div>
                     </section>
 
@@ -139,16 +157,16 @@
 
             <!-- Events Section -->
             <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <section class="bg-white p-6 card">
-                    <h2 class="text-2xl font-bold mb-4 text-gray-800">Future Events</h2>
+                <section class="p-6 card">
+                    <h2 class="text-2xl font-bold mb-4 text-gray-900">Future Events</h2>
                     <ul class="list-disc list-inside space-y-2 text-gray-600">
-                        <li>Soccer in the States Elite ID Camp – 12/07/2025</li>
-                        <li>3rd Annual White Glove Top Shelf Holiday Camp – 12/20–12/22/2025</li>
-                        <li>Texas Lutheran University ID Camp – 02/15/2026</li>
+                        <li>Soccer in the States Elite ID Camp – <strong class="text-gray-900">12/07/2025</strong></li>
+                        <li>3rd Annual White Glove Top Shelf Holiday Camp – <strong class="text-gray-900">12/20–12/22/2025</strong></li>
+                        <li>Texas Lutheran University ID Camp – <strong class="text-gray-900">02/15/2026</strong></li>
                     </ul>
                 </section>
-                <section class="bg-white p-6 card">
-                    <h2 class="text-2xl font-bold mb-4 text-gray-800">Past Events</h2>
+                <section class="p-6 card">
+                    <h2 class="text-2xl font-bold mb-4 text-gray-900">Past Events</h2>
                     <ul class="list-disc list-inside space-y-2 text-gray-600">
                         <li>Lake Travis Fall Tournament – 11/21–11/23/2025</li>
                         <li>Lonestar Labor Day Cup – 08/30–09/01/2025</li>
