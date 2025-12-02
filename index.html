@@ -10,7 +10,7 @@
         body {
             font-family: 'Inter', sans-serif;
             background-color: #001f3f;
-            color: #d1d5db;
+            color: #111827; /* darker default text */
         }
         .main-content-wrapper {
             background-color: #ffffff;
@@ -33,10 +33,11 @@
         .btn-accent:hover { background-color: #da5b00; }
         .text-strong { color: #111827; }
 
-        /* coolest link style */
-        a.cool-link { text-decoration: none; color: inherit; }
+        a.cool-link { 
+            text-decoration: none; 
+            color: #1f2937; /* darker link color */ 
+        }
         a.cool-link:hover { text-decoration: underline; }
-
     </style>
 </head>
 
@@ -53,7 +54,7 @@
                     <div>
                         <h1 class="text-4xl font-black text-strong">Aaron Eltahan</h1>
                         <p class="text-xl font-semibold accent-text">Class of 2028</p>
-                        <p class="text-gray-600 mt-1">Attacking Midfielder • Winger</p>
+                        <p class="text-gray-700 mt-1">Attacking Midfielder • Winger</p>
                         <a href="https://youtu.be/QX-ikKVYqvE" 
                            class="mt-3 inline-block btn-accent text-white font-bold py-2 px-4 rounded shadow-lg"
                            target="_blank">
@@ -68,14 +69,14 @@
             </header>
 
 
-            <!-- ABOUT + RIGHT SIDEBAR -->
+            <!-- ABOUT + SIDEBAR -->
             <div class="flex flex-col lg:flex-row gap-8">
 
                 <!-- ABOUT -->
                 <div class="flex-1">
                     <section class="p-6 card h-full">
                         <h2 class="text-2xl font-bold mb-4 text-strong">About Aaron</h2>
-                        <div class="space-y-4 text-gray-600">
+                        <div class="space-y-4 text-gray-800">
                             <p>I’m Aaron Eltahan, a hardworking, disciplined, and coachable player who focuses on steady development and contributing to the team in meaningful ways. I currently play for FC Westlake on the 2010 STX CL team, primarily as an attacking midfielder and winger. Before joining Westlake, I spent six years at Lonestar (2019–2024), playing mainly as a winger and striker while competing in league play and tournaments.</p>
                             <p>I have trained continuously for years, beginning with Avila Soccer and now with 1A Soccer Sports Club for ongoing individual technical development. Strength and conditioning sessions several times weekly support his athletic performance. Coaches describe me as extremely coachable with strong movement, vision, positioning, and reliability in possession.</p>
                             <p>I maintain a <strong class="text-strong">4.0 GPA</strong> at Early College High School and take ACC dual-credit courses. I also work as a certified lifeguard.</p>
@@ -84,32 +85,33 @@
                     </section>
                 </div>
 
-                <!-- RIGHT COLUMN FIXED HEIGHT MATCH -->
+                <!-- RIGHT SIDEBAR -->
                 <div class="w-full lg:w-80 flex flex-col h-full justify-between">
 
-                    <!-- Details -->
+                    <!-- DETAILS -->
                     <section class="p-6 card mb-8">
                         <h2 class="text-xl font-bold mb-4 text-strong">Details</h2>
 
-                        <p class="text-sm"><strong class="text-strong">Birthdate:</strong> 03/19/2010</p>
-                        <p class="text-sm"><strong class="text-strong">Nationality:</strong> USA</p>
-                        <p class="text-sm"><strong class="text-strong">Height/Weight:</strong> 6'0" • 140 lbs</p>
-                        <p class="text-sm"><strong class="text-strong">Location:</strong> Austin, Texas</p>
-                        <p class="text-sm"><strong class="text-strong">School:</strong> ECHS Round Rock</p>
+                        <p class="text-sm text-gray-800"><strong class="text-strong">Birthdate:</strong> 03/19/2010</p>
+                        <p class="text-sm text-gray-800"><strong class="text-strong">Nationality:</strong> USA</p>
+                        <p class="text-sm text-gray-800"><strong class="text-strong">Height/Weight:</strong> 6'0" • 140 lbs</p>
+                        <p class="text-sm text-gray-800"><strong class="text-strong">Location:</strong> Austin, Texas</p>
+                        <p class="text-sm text-gray-800"><strong class="text-strong">School:</strong> ECHS Round Rock</p>
 
                         <h3 class="text-md font-semibold mt-4 text-strong">IDs</h3>
-                        <p class="text-xs text-gray-500">NCAA: 2511775039</p>
-                        <p class="text-xs text-gray-500">NAIA: 1025364</p>
-                        <p class="text-xs text-gray-500">NCSA: VERIFIED</p>
+                        <p class="text-xs text-gray-700">NCAA: 2511775039</p>
+                        <p class="text-xs text-gray-700">NAIA: 1025364</p>
+                        <p class="text-xs text-gray-700">NCSA: VERIFIED</p>
                     </section>
 
-                    <!-- Academics aligned perfectly -->
+
+                    <!-- ACADEMICS (BOTTOM-ALIGNED) -->
                     <section class="p-6 card mt-auto">
                         <h2 class="text-xl font-bold mb-4 text-strong">Academics</h2>
-                        <p class="text-sm"><strong class="text-strong">School:</strong> Round Rock Early College High School</p>
-                        <p class="text-sm"><strong class="text-strong">Cumulative GPA:</strong> 4.0</p>
-                        <p class="text-sm"><strong class="text-strong">Weighted GPA:</strong> 5.64</p>
-                        <p class="text-sm"><strong class="text-strong">Class Rank:</strong> 18 / 108</p>
+                        <p class="text-sm text-gray-800"><strong class="text-strong">School:</strong> Round Rock Early College High School</p>
+                        <p class="text-sm text-gray-800"><strong class="text-strong">Cumulative GPA:</strong> 4.0</p>
+                        <p class="text-sm text-gray-800"><strong class="text-strong">Weighted GPA:</strong> 5.64</p>
+                        <p class="text-sm text-gray-800"><strong class="text-strong">Class Rank:</strong> 18 / 108</p>
                     </section>
 
                 </div>
@@ -117,50 +119,51 @@
 
 
 
-            <!-- CONTACTS + COACHES (CLICKABLE) -->
+            <!-- CONTACTS + COACHES -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
 
                 <section class="p-6 card h-full">
                     <h2 class="text-2xl font-bold mb-4 text-strong">Contacts</h2>
 
-                    <p><strong class="text-strong">Athlete:</strong>
-                        <a class="cool-link" href="tel:5126083914">512-608-3914</a> |
+                    <p class="text-gray-800"><strong class="text-strong">Athlete:</strong>
+                        <a class="cool-link" href="tel:5126083914">512-608-3914</a> •
                         <a class="cool-link" href="mailto:anubis74@hotmail.com">anubis74@hotmail.com</a>
                     </p>
 
-                    <p><strong class="text-strong">Father:</strong>
-                        <a class="cool-link" href="tel:5126083914">512-608-3914</a> |
+                    <p class="text-gray-800"><strong class="text-strong">Father:</strong>
+                        <a class="cool-link" href="tel:5126083914">512-608-3914</a> •
                         <a class="cool-link" href="mailto:aeltahan2019@outlook.com">aeltahan2019@outlook.com</a>
                     </p>
 
-                    <p><strong class="text-strong">Mother:</strong>
-                        <a class="cool-link" href="tel:5123511586">512-351-1586</a> |
+                    <p class="text-gray-800"><strong class="text-strong">Mother:</strong>
+                        <a class="cool-link" href="tel:5123511586">512-351-1586</a> •
                         <a class="cool-link" href="mailto:anubis74@hotmail.com">anubis74@hotmail.com</a>
                     </p>
 
-                    <p><strong class="text-strong">Address:</strong> 13521 Bolivia Dr, Austin, TX 78729</p>
+                    <p class="text-gray-800"><strong class="text-strong">Address:</strong> 13521 Bolivia Dr, Austin, TX 78729</p>
                 </section>
+
 
                 <section class="p-6 card h-full">
                     <h2 class="text-2xl font-bold mb-4 text-strong">Coach References</h2>
 
-                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <ul class="list-disc list-inside space-y-2 text-gray-800">
 
                         <li><strong class="text-strong">Club Coach:</strong>
-                            Darrell Best |
-                            <a class="cool-link" href="tel:5129254456">512-925-4456</a> |
+                            Darrell Best •
+                            <a class="cool-link" href="tel:5129254456">512-925-4456</a> •
                             <a class="cool-link" href="mailto:dbest@fcwestlakesoccer.com">dbest@fcwestlakesoccer.com</a>
                         </li>
 
                         <li><strong class="text-strong">Club Director:</strong>
-                            Wayne Bartlett |
-                            <a class="cool-link" href="tel:2107187400">210-718-7400</a> |
+                            Wayne Bartlett •
+                            <a class="cool-link" href="tel:2107187400">210-718-7400</a> •
                             <a class="cool-link" href="mailto:wbartlett@fcwestlakesoccer.com">wbartlett@fcwestlakesoccer.com</a>
                         </li>
 
                         <li><strong class="text-strong">Private Coach:</strong>
-                            Chris Brown |
-                            <a class="cool-link" href="tel:7373001226">737-300-1226</a> |
+                            Chris Brown •
+                            <a class="cool-link" href="tel:7373001226">737-300-1226</a> •
                             <a class="cool-link" href="mailto:admin@1asoccer.com">admin@1asoccer.com</a>
                         </li>
 
@@ -174,7 +177,8 @@
             <!-- ATHLETIC PROFILE -->
             <section class="p-6 card mt-8">
                 <h2 class="text-2xl font-bold mb-4 text-strong">Athletic Profile</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-600">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-800">
 
                     <ul class="space-y-2">
                         <li><strong class="text-strong">S&C:</strong> Trains 3–4 times per week</li>
@@ -195,14 +199,16 @@
             </section>
 
 
+
             <!-- TEAMS -->
             <section class="p-6 card mt-8">
                 <h2 class="text-2xl font-bold mb-4 text-strong">Teams</h2>
-                <ul class="list-disc list-inside text-gray-600">
+                <ul class="list-disc list-inside text-gray-800">
                     <li>Club: FC Westlake (2024–present)</li>
                     <li>Club: Lonestar SC (2019–2025)</li>
                 </ul>
             </section>
+
 
 
             <!-- EVENTS -->
@@ -210,7 +216,7 @@
 
                 <section class="p-6 card h-full">
                     <h2 class="text-2xl font-bold mb-4 text-strong">Future Events</h2>
-                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <ul class="list-disc list-inside space-y-2 text-gray-800">
                         <li>Soccer in the States Elite ID Camp – 12/07/2025</li>
                         <li>3rd Annual White Glove Top Shelf Holiday Camp – 12/20–12/22/2025</li>
                         <li>Texas Lutheran University ID Camp – 02/15/2026</li>
@@ -219,7 +225,7 @@
 
                 <section class="p-6 card h-full">
                     <h2 class="text-2xl font-bold mb-4 text-strong">Past Events</h2>
-                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <ul class="list-disc list-inside space-y-2 text-gray-800">
                         <li>Lake Travis Fall Tournament – 11/21–11/23/2025</li>
                         <li>Lonestar Labor Day Cup – 08/30–09/01/2025</li>
                         <li>FCTR Austin Cup – 08/23–08/24/2025</li>
@@ -227,7 +233,6 @@
                 </section>
 
             </div>
-
 
         </div>
     </div>
